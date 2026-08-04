@@ -398,6 +398,9 @@
       </div>
       <h1>Conto com sua presença no Pulso Clínico!</h1>
       <p>Sua solicitação foi enviada. Em breve você receberá a confirmação oficial da organização, caso sua vaga seja aprovada.</p>
+      
+      <!-- Novo botão adicionado aqui -->
+      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer nova inscrição</button>
     </div>
   </div>
 
@@ -422,7 +425,7 @@
 
   document.getElementById('btn-start').addEventListener('click', () => showScreen('form'));
   document.getElementById('btn-back').addEventListener('click', () => showScreen('welcome'));
-
+  document.getElementById('btn-new').addEventListener('click', () => showScreen('welcome'));
   // Máscara simples de WhatsApp
   const whatsapp = document.getElementById('whatsapp');
   whatsapp.addEventListener('input', () => {
