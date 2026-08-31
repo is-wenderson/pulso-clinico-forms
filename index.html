@@ -273,6 +273,36 @@
     color:#edf7ff70;
   }
 
+  .consent-box{
+    margin:18px 0 0;
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    padding:14px 16px;
+    border:1px solid var(--border);
+    border-radius:14px;
+    background:rgba(255,255,255,0.04);
+    color:var(--text);
+    font-size:14px;
+    font-weight:600;
+    line-height:1.6;
+    cursor:pointer;
+  }
+
+  .consent-box input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    min-width:18px;
+    margin:2px 0 0;
+    padding:0;
+    accent-color:var(--accent);
+    cursor:pointer;
+  }
+
+  .consent-box span{
+    display:block;
+  }
+
   .footer-note{
     margin-top:22px;
     text-align:center;
@@ -396,7 +426,12 @@
       <button class="btn" type="submit" id="btn-submit">Enviar solicitação</button>
       <button class="btn btn-ghost" type="button" id="btn-back">Voltar</button>
 
-      <p class="privacy-note">As informações fornecidas poderão ser utilizadas pela organização e parceiros do Pulso Clínico para comunicações, relacionamento e outras iniciativas.</p>
+      <label class="consent-box" for="autorizacaoDados">
+        <input type="checkbox" id="autorizacaoDados" name="autorizacaoDados" checked>
+        <span>
+          Autorizo o uso dos dados fornecidos neste formulário pela organização do Pulso Clínico e o compartilhamento dessas informações com seus parceiros para comunicações, relacionamento e outras iniciativas.
+        </span>
+      </label>
     </form>
   </div>
 
@@ -500,6 +535,7 @@
       interesse: interesseSelecionados,
       outroQual: form.outroQual.value.trim(),
       observacoes: form.observacoes.value.trim(),
+      autorizacaoDados: form.autorizacaoDados.checked ? 'SIM' : 'NÃO',
       paginaOrigem: window.location.href,
     };
 
