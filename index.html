@@ -31,7 +31,7 @@
       var(--bg);
     color:var(--text);
     font-family:'Montserrat', sans-serif;
-    font-size:17px;
+    font-size:18px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -48,11 +48,13 @@
     overflow:hidden;
   }
   .card-inner{
-    padding:44px 36px;
+    padding:50px 40px 44px;
+    margin-top:0;
     position:relative;
   }
   .banner{
     width:100%;
+    margin-bottom:2px;
     aspect-ratio: 3 / 1;
     overflow:hidden;
     background:linear-gradient(135deg, #0f4d2c, #1a6b3d);
@@ -102,8 +104,8 @@
   }
   .lead{
     color:var(--text-dim);
-    font-size:15.5px;
-    line-height:1.6;
+    font-size:17px;
+    line-height:1.65;
     margin:0 0 10px;
   }
   .lead strong{color:var(--text); font-weight:600;}
@@ -113,15 +115,15 @@
     background:var(--accent-soft);
     border:1px solid var(--accent);
     border-radius:16px;
-    font-size:14px;
+    font-size:16px;
     color:var(--text);
-    line-height:1.55;
+    line-height:1.65;
   }
   .exclusive b{color:var(--accent);}
   .event-info{
     margin-top:18px;
-    font-size:14.5px;
-    line-height:1.7;
+    font-size:16px;
+    line-height:1.75;
     color:var(--text);
   }
   .btn{
@@ -157,10 +159,10 @@
   @keyframes fade{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
 
   form{margin-top:28px;}
-  .field{margin-bottom:20px;}
+  .field{margin-bottom:24px;}
   label{
     display:block;
-    font-size:13px;
+    font-size:15px;
     font-weight:600;
     color:var(--text-dim);
     margin-bottom:8px;
@@ -173,8 +175,8 @@
     border:1px solid var(--border);
     color:var(--text);
     font-family:inherit;
-    font-size:15.5px;
-    padding:14px 20px;
+    font-size:17px;
+    padding:15px 20px;
     border-radius:var(--radius);
     outline:none;
     transition:border-color .15s ease, box-shadow .15s ease;
@@ -193,7 +195,7 @@
     border-color:var(--accent);
     box-shadow:0 0 0 3px var(--accent-soft);
   }
-  .hint{font-size:12px; color:var(--text-dim); margin-top:6px;}
+  .hint{font-size:13px; color:var(--text-dim); margin-top:6px;}
   .error{font-size:12px; color:#ff8b8b; margin-top:6px; display:none;}
   .field.invalid input, .field.invalid select{border-color:#ff8b8b;}
   .field.invalid .error{display:block;}
@@ -268,13 +270,13 @@
   .privacy-note{
     margin:18px 0 0;
     text-align:center;
-    font-size:11.5px;
-    line-height:1.55;
+    font-size:13px;
+    line-height:1.6;
     color:#edf7ff70;
   }
 
   .consent-box{
-    margin:18px 0 0;
+    margin:24px 0 0;
     display:flex;
     align-items:flex-start;
     gap:10px;
@@ -283,9 +285,9 @@
     border-radius:14px;
     background:rgba(255,255,255,0.04);
     color:var(--text);
-    font-size:14px;
+    font-size:15.5px;
     font-weight:600;
-    line-height:1.6;
+    line-height:1.65;
     cursor:pointer;
   }
 
@@ -306,23 +308,29 @@
   .footer-note{
     margin-top:22px;
     text-align:center;
-    font-size:11.5px;
-    color:#edf7ff5c;
+    font-size:13px;
+    color:#edf7ff80;
   }
 
   .pix-box{
     margin-top:20px;padding:18px;border:1px solid var(--accent);
     border-radius:18px;background:var(--accent-soft);text-align:left;
   }
-  .pix-label{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px;}
-  .pix-key{background:rgba(0,0,0,.16);border:1px solid var(--border);border-radius:12px;padding:13px 14px;font-size:14px;line-height:1.4;word-break:break-all;color:var(--text);margin-bottom:12px;}
+  .pix-label{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px;}
+  .pix-key{background:rgba(0,0,0,.16);border:1px solid var(--border);border-radius:12px;padding:15px 14px;font-size:16px;line-height:1.4;word-break:break-all;color:var(--text);margin-bottom:12px;}
   .copy-feedback{min-height:18px;margin-top:8px;color:var(--accent);font-size:12px;text-align:center;}
-  .payment-note{color:var(--text-dim);font-size:14px;line-height:1.65;margin-top:18px;}
-  .whatsapp-btn{display:block;text-decoration:none;text-align:center;margin-top:18px;}
+  .payment-note{color:var(--text-dim);font-size:16px;line-height:1.65;margin-top:18px;}
+  .whatsapp-btn{display:block;text-decoration:none;text-align:center;margin-top:22px;}
+  .consent-box + .btn{margin-top:24px;}
 
   @media (max-width:480px){
-    .card{padding:32px 22px; border-radius:22px;}
-    h1{font-size:25px;}
+    .card{border-radius:22px;}
+    .card-inner{padding:38px 22px 32px;}
+    h1{font-size:27px;}
+    .lead{font-size:16.5px;}
+    label{font-size:15px;}
+    input, select, textarea{font-size:16.5px;}
+    .consent-box{font-size:15px; padding:16px 17px;}
   }
 </style>
 </head>
@@ -414,8 +422,13 @@
       </div>
       <span class="eyebrow" style="margin-bottom:10px;">Inscrição recebida</span>
       <h1>Agora falta confirmar sua vaga</h1>
-      <p>Sua solicitação foi recebida. <strong>A inscrição só será confirmada após o pagamento de R$ 180,00.</strong></p>
+      <p>Sua solicitação foi recebida. <strong>O envio deste formulário não reserva a vaga.</strong></p>
       <div class="exclusive" style="text-align:left; margin-top:20px;">
+        <strong>ATENÇÃO: confirmação por ordem de pagamento</strong><br><br>
+        O encontro terá apenas <strong>15 vagas</strong>. A inscrição será confirmada exclusivamente pela <strong>ordem em que os pagamentos de R$ 180,00 forem identificados e conferidos</strong>.<br><br>
+        Portanto, <strong>somente os 15 primeiros pagamentos confirmados garantirão as vagas</strong>. O simples preenchimento do formulário não garante participação.
+      </div>
+      <div class="exclusive" style="text-align:left; margin-top:16px;">
         <strong>Pagamento via Pix</strong><br>
         A chave Pix está em nome da <strong>Techcomp</strong>, que atua como intermediadora do pagamento. O valor será repassado para a estrutura do jantar e demais custos da noite.
       </div>
@@ -425,13 +438,13 @@
         <button class="btn" type="button" id="btn-copy-pix">Copiar chave Pix</button>
         <div class="copy-feedback" id="copy-feedback"></div>
       </div>
-      <p class="payment-note">Depois de realizar o pagamento, envie o <strong>comprovante pelo WhatsApp</strong> para <strong>(84) 98187-8563</strong>. A vaga será considerada confirmada após a conferência do pagamento.</p>
+      <p class="payment-note"><strong>Após pagar, envie imediatamente o comprovante pelo WhatsApp</strong> para <strong>(84) 98187-8563</strong>. A vaga será considerada confirmada somente após a conferência do pagamento e respeitando a ordem dos 15 primeiros pagamentos.</p>
       <a class="btn whatsapp-btn" href="https://wa.me/5584981878563" target="_blank" rel="noopener">Enviar comprovante pelo WhatsApp</a>
       <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top:18px;">Fazer nova inscrição</button>
     </div>
   </div>
 
-  <div class="footer-note">Pulso Clínico Select · Healthcomp • NOV4 Gestão • Conceive</div>Pulso Clínico · Natal/RN</div>
+  <div class="footer-note">Pulso Clínico Select · Healthcomp • NOV4 Gestão • Conceive · Natal/RN</div>
   </div>
 </div>
 
