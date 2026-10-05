@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Pulso Clínico Select — Inscrição</title>
-<meta name="description" content="Inscrição para o Pulso Clínico Select">
+<title>Pulso Clínico para Gestores — Inscrição</title>
+<meta name="description" content="Formulário de inscrição para o Pulso Clínico para Gestores">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -48,13 +48,11 @@
     overflow:hidden;
   }
   .card-inner{
-    padding:50px 40px 44px;
-    margin-top:0;
+    padding:44px 36px;
     position:relative;
   }
   .banner{
     width:100%;
-    margin-bottom:2px;
     aspect-ratio: 3 / 1;
     overflow:hidden;
     background:linear-gradient(135deg, #0f4d2c, #1a6b3d);
@@ -96,7 +94,7 @@
     box-shadow:0 0 0 4px var(--accent-soft);
   }
   h1{
-    font-size:30px;
+    font-size:34px;
     font-weight:800;
     line-height:1.15;
     margin:0 0 14px;
@@ -104,7 +102,7 @@
   }
   .lead{
     color:var(--text-dim);
-    font-size:17px;
+    font-size:18px;
     line-height:1.65;
     margin:0 0 10px;
   }
@@ -115,14 +113,14 @@
     background:var(--accent-soft);
     border:1px solid var(--accent);
     border-radius:16px;
-    font-size:16px;
+    font-size:16.5px;
     color:var(--text);
     line-height:1.65;
   }
   .exclusive b{color:var(--accent);}
   .event-info{
     margin-top:18px;
-    font-size:16px;
+    font-size:16.5px;
     line-height:1.75;
     color:var(--text);
   }
@@ -159,10 +157,10 @@
   @keyframes fade{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
 
   form{margin-top:28px;}
-  .field{margin-bottom:24px;}
+  .field{margin-bottom:20px;}
   label{
     display:block;
-    font-size:15px;
+    font-size:14.5px;
     font-weight:600;
     color:var(--text-dim);
     margin-bottom:8px;
@@ -175,7 +173,7 @@
     border:1px solid var(--border);
     color:var(--text);
     font-family:inherit;
-    font-size:17px;
+    font-size:16.5px;
     padding:15px 20px;
     border-radius:var(--radius);
     outline:none;
@@ -195,7 +193,7 @@
     border-color:var(--accent);
     box-shadow:0 0 0 3px var(--accent-soft);
   }
-  .hint{font-size:13px; color:var(--text-dim); margin-top:6px;}
+  .hint{font-size:12px; color:var(--text-dim); margin-top:6px;}
   .error{font-size:12px; color:#ff8b8b; margin-top:6px; display:none;}
   .field.invalid input, .field.invalid select{border-color:#ff8b8b;}
   .field.invalid .error{display:block;}
@@ -216,7 +214,7 @@
     border:1px solid var(--border);
     border-radius:16px;
     cursor:pointer;
-    font-size:15px;
+    font-size:16px;
     font-weight:500;
     transition:border-color .15s ease, box-shadow .15s ease;
   }
@@ -265,18 +263,18 @@
     margin:0 auto 22px;
   }
   .thanks h1{font-size:24px;}
-  .thanks p{color:var(--text-dim); font-size:15px; line-height:1.6;}
+  .thanks p{color:var(--text-dim); font-size:17px; line-height:1.65;}
 
   .privacy-note{
     margin:18px 0 0;
     text-align:center;
-    font-size:13px;
-    line-height:1.6;
+    font-size:11.5px;
+    line-height:1.55;
     color:#edf7ff70;
   }
 
   .consent-box{
-    margin:24px 0 0;
+    margin:18px 0 0;
     display:flex;
     align-items:flex-start;
     gap:10px;
@@ -285,9 +283,9 @@
     border-radius:14px;
     background:rgba(255,255,255,0.04);
     color:var(--text);
-    font-size:15.5px;
+    font-size:14px;
     font-weight:600;
-    line-height:1.65;
+    line-height:1.6;
     cursor:pointer;
   }
 
@@ -308,29 +306,13 @@
   .footer-note{
     margin-top:22px;
     text-align:center;
-    font-size:13px;
-    color:#edf7ff80;
+    font-size:11.5px;
+    color:#edf7ff5c;
   }
-
-  .pix-box{
-    margin-top:20px;padding:18px;border:1px solid var(--accent);
-    border-radius:18px;background:var(--accent-soft);text-align:left;
-  }
-  .pix-label{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px;}
-  .pix-key{background:rgba(0,0,0,.16);border:1px solid var(--border);border-radius:12px;padding:15px 14px;font-size:16px;line-height:1.4;word-break:break-all;color:var(--text);margin-bottom:12px;}
-  .copy-feedback{min-height:18px;margin-top:8px;color:var(--accent);font-size:12px;text-align:center;}
-  .payment-note{color:var(--text-dim);font-size:16px;line-height:1.65;margin-top:18px;}
-  .whatsapp-btn{display:block;text-decoration:none;text-align:center;margin-top:22px;}
-  .consent-box + .btn{margin-top:24px;}
 
   @media (max-width:480px){
-    .card{border-radius:22px;}
-    .card-inner{padding:38px 22px 32px;}
-    h1{font-size:27px;}
-    .lead{font-size:16.5px;}
-    label{font-size:15px;}
-    input, select, textarea{font-size:16.5px;}
-    .consent-box{font-size:15px; padding:16px 17px;}
+    .card{padding:32px 22px; border-radius:22px;}
+    h1{font-size:29px;}
   }
 </style>
 </head>
@@ -347,29 +329,28 @@
 
   <!-- TELA 1: BOAS-VINDAS -->
   <div class="screen active" id="screen-welcome">
-    <span class="eyebrow"><span class="dot"></span>Experiência exclusiva</span>
-    <h1>Pulso Clínico Select</h1>
-    <p class="lead"><strong>Uma mesa para apenas 15 donos de clínica.</strong></p>
-    <p class="lead">Uma noite reservada para proprietários e sócios de clínicas que querem colocar na mesa os desafios reais da gestão, ouvir quem vive situações parecidas e trocar experiências que podem ser aplicadas na prática.</p>
-    <div class="exclusive"><b>Sem palco. Sem palestra.</b><br>Na inscrição, você compartilha um desafio real da sua clínica. A partir dessas respostas, definiremos os temas que irão conduzir a conversa da noite.</div>
+    <span class="eyebrow"><span class="dot"></span>Pulso Clínico para Gestores</span>
+    <h1>Pulso Clínico para Gestores</h1>
+    <p class="lead">Um encontro criado para quem vive a gestão de clínicas todos os dias. O <strong>Pulso Clínico para Gestores</strong> será um momento de troca entre gestores, proprietários e líderes, reunindo experiências, desafios e aprendizados de quem está à frente da operação e das decisões.</p>
+    <div class="exclusive">
+      O <b>Pulso Clínico para Gestores</b> é um espaço reservado para conversas relevantes sobre os desafios reais da gestão. Um momento para compartilhar experiências, ouvir outros gestores, ampliar perspectivas e discutir caminhos práticos para uma gestão cada vez mais eficiente.
+    </div>
     <p class="event-info">
-      <strong>📅 Quarta, 07 de outubro</strong><br>
-      <strong>🕕 Das 18h às 21h</strong><br>
-      <strong>📍 Adega São Cristóvão, Natal/RN</strong><br>
-      <strong>🍷 Jantar assinado pelo Cascudo Bistrô + seleção de vinhos</strong><br><br>
-      <strong>R$ 180 por pessoa</strong> — valor destinado ao jantar, vinhos e estrutura da noite.
+      <strong>Dia 22 de outubro de 2026.</strong><br>
+      <strong>Das 13h30 às 17h.</strong><br>
+      <strong>Local: a confirmar.</strong>
     </p>
-    <p class="hint" style="margin-top:18px;">O encontro é limitado a 15 participantes. A inscrição só será confirmada após o pagamento da taxa de participação.</p>
-    <button class="btn" style="margin-top:26px" id="btn-start">Solicitar participação</button>
+    <button class="btn" style="margin-top:26px" id="btn-start">Quero participar</button>
   </div>
 
   <!-- TELA 2: FORMULÁRIO -->
   <div class="screen" id="screen-form">
-    <span class="eyebrow"><span class="dot"></span>Pulso Clínico Select</span>
-    <h1>Solicite sua participação</h1>
-    <p class="lead">Queremos entender o que realmente importa para quem está à frente de uma clínica. Suas respostas também ajudarão a definir a conversa da noite.</p>
+    <span class="eyebrow"><span class="dot"></span>Pulso Clínico para Gestores</span>
+    <h1>Inscrição para o encontro</h1>
+    <p class="lead">Preencha as informações abaixo para participar do Pulso Clínico para Gestores.</p>
 
     <form id="pulso-form" novalidate>
+
       <div class="field" data-field="nome">
         <label for="nome">Nome e Sobrenome<span class="req">*</span></label>
         <input type="text" id="nome" name="nome" placeholder="Nome e Sobrenome" required>
@@ -377,87 +358,82 @@
       </div>
 
       <div class="field" data-field="empresa">
-        <label for="empresa">Clínica<span class="req">*</span></label>
-        <input type="text" id="empresa" name="empresa" placeholder="Nome da clínica" required>
-        <div class="error">Informe o nome da clínica.</div>
+        <label for="empresa">Empresa/Clínica<span class="req">*</span></label>
+        <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da Empresa/Clínica" required>
+        <div class="error">Informe o nome da empresa ou clínica.</div>
       </div>
 
       <div class="field" data-field="cargo">
-        <label for="cargo">Cargo / Função<span class="req">*</span></label>
-        <input type="text" id="cargo" name="cargo" placeholder="Ex.: Proprietário, Sócio, Diretor..." required>
-        <div class="error">Informe seu cargo ou função.</div>
+        <label for="cargo">Cargo<span class="req">*</span></label>
+        <input type="text" id="cargo" name="cargo" placeholder="Qual seu cargo?" required>
+        <div class="error">Informe seu cargo.</div>
       </div>
 
       <div class="field" data-field="whatsapp">
         <label for="whatsapp">WhatsApp<span class="req">*</span></label>
-        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(84) 99999-9999" required>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
         <div class="error">Informe um WhatsApp válido.</div>
+      </div>
+
+      <div class="field" data-field="comoSoube">
+        <label for="comoSoube">Como soube do Pulso Clínico?</label>
+        <input type="text" id="comoSoube" name="comoSoube" placeholder="Por onde nos conheceu?">
       </div>
 
       <div class="field" data-field="dores">
         <label for="dores">Qual é hoje a principal dor ou desafio da sua clínica?</label>
-        <textarea id="dores" name="dores" placeholder="Pode ser algo relacionado a equipe, crescimento, gestão, financeiro, operação..."></textarea>
+        <textarea id="dores" name="dores" placeholder="Conte brevemente o principal desafio"></textarea>
       </div>
 
       <div class="field" data-field="tema">
         <label for="tema">Qual tópico você gostaria que fosse discutido no encontro?</label>
-        <textarea id="tema" name="tema" placeholder="Qual assunto você gostaria de colocar na mesa?"></textarea>
+        <textarea id="tema" name="tema" placeholder="Qual tema seria mais relevante para você?"></textarea>
       </div>
 
-      <label class="consent-box" for="autorizacaoDados">
-        <input type="checkbox" id="autorizacaoDados" name="autorizacaoDados" checked>
-        <span>Autorizo o uso dos dados fornecidos neste formulário pela organização do Pulso Clínico e o compartilhamento dessas informações com seus parceiros para comunicações, relacionamento e outras iniciativas.</span>
-      </label>
+      <div class="field" data-field="observacoes">
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" name="observacoes" placeholder="Contribua com ideias e sugestões"></textarea>
+      </div>
 
       <button class="btn" type="submit" id="btn-submit">Enviar solicitação</button>
       <button class="btn btn-ghost" type="button" id="btn-back">Voltar</button>
+
+      <label class="consent-box" for="autorizacaoDados">
+        <input type="checkbox" id="autorizacaoDados" name="autorizacaoDados" checked>
+        <span>
+          Autorizo o uso dos dados fornecidos neste formulário pela organização do Pulso Clínico e o compartilhamento dessas informações com seus parceiros para comunicações, relacionamento e outras iniciativas.
+        </span>
+      </label>
     </form>
   </div>
 
-  <!-- TELA 3: PAGAMENTO -->
+  <!-- TELA 3: OBRIGADO -->
   <div class="screen" id="screen-thanks">
     <div class="thanks">
       <div class="check">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="#17bf63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <span class="eyebrow" style="margin-bottom:10px;">Inscrição recebida</span>
-      <h1>Agora falta confirmar sua vaga</h1>
-      <p>Sua solicitação foi recebida. <strong>O preenchimento deste formulário não garante a participação.</strong></p>
-      <div class="exclusive" style="text-align:left; margin-top:20px;">
-        <strong>ATENÇÃO: as vagas serão confirmadas por ordem de pagamento</strong><br><br>
-        O encontro terá apenas <strong>15 vagas</strong>. A confirmação será feita pela <strong>ordem dos pagamentos de R$ 180,00 identificados e conferidos</strong>.<br><br>
-        Assim, as vagas serão destinadas aos <strong>15 primeiros participantes com pagamento confirmado</strong>.
-      </div>
-      <div class="exclusive" style="text-align:left; margin-top:16px;">
-        <strong>Pagamento via Pix</strong><br>
-        A chave Pix está em nome da <strong>Techcomp</strong>, que atua como intermediadora do pagamento. O valor será destinado ao jantar, vinhos e estrutura da noite.
-      </div>
-      <div class="pix-box">
-        <div class="pix-label">Chave Pix</div>
-        <div class="pix-key" id="pix-key">44342353-3183-46aa-8e30-047f97d76092</div>
-        <button class="btn" type="button" id="btn-copy-pix">Copiar chave Pix</button>
-        <div class="copy-feedback" id="copy-feedback"></div>
-      </div>
-      <p class="payment-note"><strong>Após realizar o pagamento, envie o comprovante pelo WhatsApp</strong> para <strong>(84) 98187-8563</strong>.<br><br>Sua vaga será confirmada após a conferência do pagamento, respeitando a <strong>ordem de confirmação das 15 vagas</strong>.</p>
-      <a class="btn whatsapp-btn" href="https://wa.me/5584981878563" target="_blank" rel="noopener">Enviar comprovante pelo WhatsApp</a>
-      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top:18px;">Fazer nova inscrição</button>
+      <h1>Inscrição recebida!</h1>
+      <p>Sua solicitação de participação foi registrada com sucesso. A comissão organizadora entrará em contato pelo WhatsApp informado para confirmar sua participação no evento.</p>
+      
+      <!-- Novo botão adicionado aqui -->
+      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer nova inscrição</button>
     </div>
   </div>
 
-  <div class="footer-note">Pulso Clínico Select · Healthcomp • NOV4 Gestão • Conceive · Natal/RN</div>
+  <div class="footer-note">Pulso Clínico para Gestores · Natal/RN</div>
   </div>
 </div>
 
 <script>
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwdCfUMnkxCs6ukgRHzAHgNnWojMHxlDhiXc3uajECGCnuLg4qxg9wDYasgfYSWBxDJ6w/exec";
-  const PIX_KEY = "44342353-3183-46aa-8e30-047f97d76092";
+  // ⚠️ Substitua pela URL do seu Google Apps Script (Web App) — veja README.md
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwD8gl3QDs2wcYMLBM3aKAJ7Y7RcnU_plotKXYxcbwUlO1U8TPLUS3qQ1uLoIfOoD-cFg/exec";
 
   const screens = {
     welcome: document.getElementById('screen-welcome'),
     form: document.getElementById('screen-form'),
-    thanks: document.getElementById('screen-thanks')
+    thanks: document.getElementById('screen-thanks'),
   };
-
   function showScreen(name){
     Object.values(screens).forEach(s => s.classList.remove('active'));
     screens[name].classList.add('active');
@@ -466,11 +442,8 @@
 
   document.getElementById('btn-start').addEventListener('click', () => showScreen('form'));
   document.getElementById('btn-back').addEventListener('click', () => showScreen('welcome'));
-  document.getElementById('btn-new').addEventListener('click', () => {
-    document.getElementById('pulso-form').reset();
-    showScreen('welcome');
-  });
-
+  document.getElementById('btn-new').addEventListener('click', () => showScreen('welcome'));
+  // Máscara simples de WhatsApp
   const whatsapp = document.getElementById('whatsapp');
   whatsapp.addEventListener('input', () => {
     let v = whatsapp.value.replace(/\D/g, '').slice(0, 11);
@@ -484,41 +457,25 @@
 
   function setError(name, on){
     const field = form.querySelector(`[data-field="${name}"]`);
-    if (field) field.classList.toggle('invalid', on);
+    field.classList.toggle('invalid', on);
   }
 
   function validate(){
     let ok = true;
-    ['nome','empresa','cargo'].forEach(name => {
-      const valid = form.elements[name].value.trim().length > 1;
+    const required = ['nome','empresa','cargo','whatsapp'];
+    required.forEach(name => {
+      const el = form.elements[name];
+      const valid = el.value.trim().length > (name === 'whatsapp' ? 13 : 1);
       setError(name, !valid);
-      if (!valid) ok = false;
+      if(!valid) ok = false;
     });
-    const validWhatsapp = form.whatsapp.value.replace(/\D/g, '').length >= 10;
-    setError('whatsapp', !validWhatsapp);
-    if (!validWhatsapp) ok = false;
+
     return ok;
   }
 
-  document.getElementById('btn-copy-pix').addEventListener('click', async () => {
-    const feedback = document.getElementById('copy-feedback');
-    try {
-      await navigator.clipboard.writeText(PIX_KEY);
-    } catch (err) {
-      const temp = document.createElement('textarea');
-      temp.value = PIX_KEY;
-      document.body.appendChild(temp);
-      temp.select();
-      document.execCommand('copy');
-      temp.remove();
-    }
-    feedback.textContent = 'Chave Pix copiada!';
-    setTimeout(() => feedback.textContent = '', 3000);
-  });
-
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (!validate()) return;
+    if(!validate()) return;
 
     btnSubmit.disabled = true;
     btnSubmit.textContent = 'Enviando...';
@@ -528,33 +485,36 @@
       empresa: form.empresa.value.trim(),
       cargo: form.cargo.value.trim(),
       whatsapp: form.whatsapp.value.trim(),
+      comoSoube: form.comoSoube.value.trim(),
       dores: form.dores.value.trim(),
       tema: form.tema.value.trim(),
+      observacoes: form.observacoes.value.trim(),
       autorizacaoDados: form.autorizacaoDados.checked ? 'SIM' : 'NÃO',
-      statusInscricao: 'PENDENTE - AGUARDANDO PAGAMENTO',
-      valorParticipacao: 'R$ 180,00',
-      pix: PIX_KEY,
-      paginaOrigem: window.location.href
+      evento: 'Pulso Clínico para Gestores',
+      dataEvento: '22/10/2026',
+      horarioEvento: '13h30 às 17h',
+      localEvento: 'A confirmar',
+      paginaOrigem: window.location.href,
     };
 
     try {
-      if (SCRIPT_URL && !SCRIPT_URL.includes('COLE_AQUI')) {
+      if (SCRIPT_URL.includes('COLE_AQUI')) {
+        console.warn('Configure SCRIPT_URL no index.html com a URL do seu Apps Script.');
+      } else {
         await fetch(SCRIPT_URL, {
-          method:'POST',
-          mode:'no-cors',
-          headers:{'Content-Type':'text/plain;charset=utf-8'},
-          body:JSON.stringify(payload)
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
         });
       }
-      document.getElementById('pix-key').textContent = PIX_KEY;
       showScreen('thanks');
       form.reset();
-    } catch(err) {
+    } catch (err) {
       console.error(err);
-      alert('Não foi possível enviar agora. Verifique sua conexão e tente novamente.');
-    } finally {
       btnSubmit.disabled = false;
-      btnSubmit.textContent = 'Enviar solicitação';
+      btnSubmit.textContent = 'Enviar inscrição';
+      alert('Não foi possível enviar agora. Verifique sua conexão e tente novamente.');
     }
   });
 </script>
