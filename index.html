@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Pulso Clínico para Gestores — Inscrição</title>
-<meta name="description" content="Formulário de inscrição para o Pulso Clínico para Gestores">
-<link rel="icon" type="image/jpeg" href="iconeevento.jfif">
+<title>Pulso Clínico — Próxima edição</title>
+<meta name="description" content="Cadastre seu interesse para participar da próxima edição do Pulso Clínico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,7 +31,7 @@
       var(--bg);
     color:var(--text);
     font-family:'Montserrat', sans-serif;
-    font-size:18px;
+    font-size:17px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -104,7 +102,7 @@
   }
   .lead{
     color:var(--text-dim);
-    font-size:18px;
+    font-size:17px;
     line-height:1.65;
     margin:0 0 10px;
   }
@@ -115,15 +113,15 @@
     background:var(--accent-soft);
     border:1px solid var(--accent);
     border-radius:16px;
-    font-size:16.5px;
+    font-size:15.5px;
     color:var(--text);
-    line-height:1.65;
+    line-height:1.55;
   }
   .exclusive b{color:var(--accent);}
   .event-info{
     margin-top:18px;
-    font-size:16.5px;
-    line-height:1.75;
+    font-size:14.5px;
+    line-height:1.7;
     color:var(--text);
   }
   .btn{
@@ -162,7 +160,7 @@
   .field{margin-bottom:20px;}
   label{
     display:block;
-    font-size:14.5px;
+    font-size:13px;
     font-weight:600;
     color:var(--text-dim);
     margin-bottom:8px;
@@ -175,8 +173,8 @@
     border:1px solid var(--border);
     color:var(--text);
     font-family:inherit;
-    font-size:16.5px;
-    padding:15px 20px;
+    font-size:15.5px;
+    padding:14px 20px;
     border-radius:var(--radius);
     outline:none;
     transition:border-color .15s ease, box-shadow .15s ease;
@@ -216,7 +214,7 @@
     border:1px solid var(--border);
     border-radius:16px;
     cursor:pointer;
-    font-size:16px;
+    font-size:15px;
     font-weight:500;
     transition:border-color .15s ease, box-shadow .15s ease;
   }
@@ -265,7 +263,7 @@
     margin:0 auto 22px;
   }
   .thanks h1{font-size:24px;}
-  .thanks p{color:var(--text-dim); font-size:17px; line-height:1.65;}
+  .thanks p{color:var(--text-dim); font-size:15px; line-height:1.6;}
 
   .privacy-note{
     margin:18px 0 0;
@@ -314,7 +312,7 @@
 
   @media (max-width:480px){
     .card{padding:32px 22px; border-radius:22px;}
-    h1{font-size:29px;}
+    h1{font-size:25px;}
   }
 </style>
 </head>
@@ -331,25 +329,20 @@
 
   <!-- TELA 1: BOAS-VINDAS -->
   <div class="screen active" id="screen-welcome">
-    <span class="eyebrow"><span class="dot"></span>Pulso Clínico para Gestores</span>
-    <h1>Pulso Clínico para Gestores</h1>
-    <p class="lead">Um encontro criado para quem vive a gestão de clínicas todos os dias. O <strong>Pulso Clínico para Gestores</strong> será um momento de troca entre gestores, proprietários e líderes, reunindo experiências, desafios e aprendizados de quem está à frente da operação e das decisões.</p>
+    <span class="eyebrow"><span class="dot"></span>Pulso Clínico</span>
+    <h1>Inscreva-se no próximo Pulso Clínico</h1>
+    <p class="lead">O <strong>Pulso Clínico</strong> é um espaço de conexão e troca de experiências para profissionais que vivem os desafios da gestão em saúde.</p>
     <div class="exclusive">
-      O <b>Pulso Clínico para Gestores</b> é um espaço reservado para conversas relevantes sobre os desafios reais da gestão. Um momento para compartilhar experiências, ouvir outros gestores, ampliar perspectivas e discutir caminhos práticos para uma gestão cada vez mais eficiente.
+      Cadastre seu interesse para receber em primeira mão as informações da próxima edição e saber quando as novas vagas forem abertas.
     </div>
-    <p class="event-info">
-      <strong>Dia 22 de outubro de 2026.</strong><br>
-      <strong>Das 14h às 17h.</strong><br>
-      <strong> International Trade Center - Rua Dr. Poty Nóbrega, 1946 – Lagoa Nova, Natal/RN.</strong>
-    </p>
-    <button class="btn" style="margin-top:26px" id="btn-start">Quero participar</button>
+    <button class="btn" style="margin-top:26px" id="btn-start">Quero receber as próximas informações</button>
   </div>
 
   <!-- TELA 2: FORMULÁRIO -->
   <div class="screen" id="screen-form">
-    <span class="eyebrow"><span class="dot"></span>Pulso Clínico para Gestores</span>
-    <h1>Solicitação de Participação</h1>
-    <p class="lead">Preencha as informações abaixo para solicitar sua participação no Pulso Clínico para Gestores.</p>
+    <span class="eyebrow"><span class="dot"></span>Pulso Clínico</span>
+    <h1>Interesse na próxima edição</h1>
+    <p class="lead">Preencha seus dados para receber as informações do próximo Pulso Clínico.</p>
 
     <form id="pulso-form" novalidate>
 
@@ -377,10 +370,13 @@
         <div class="error">Informe um WhatsApp válido.</div>
       </div>
 
+
+
       <div class="field" data-field="comoSoube">
         <label for="comoSoube">Como soube do Pulso Clínico?</label>
         <input type="text" id="comoSoube" name="comoSoube" placeholder="Por onde nos conheceu?">
       </div>
+
 
       <div class="field" data-field="dores">
         <label for="dores">Qual é hoje a principal dor ou desafio da sua clínica?</label>
@@ -397,13 +393,13 @@
         <textarea id="observacoes" name="observacoes" placeholder="Contribua com ideias e sugestões"></textarea>
       </div>
 
-      <button class="btn" type="submit" id="btn-submit">Enviar solicitação</button>
+      <button class="btn" type="submit" id="btn-submit">Cadastrar interesse</button>
       <button class="btn btn-ghost" type="button" id="btn-back">Voltar</button>
 
       <label class="consent-box" for="autorizacaoDados">
         <input type="checkbox" id="autorizacaoDados" name="autorizacaoDados" checked>
         <span>
-          Autorizo o uso dos dados fornecidos neste formulário pela organização do Pulso Clínico e o compartilhamento dessas informações com seus parceiros para comunicações, relacionamento e outras iniciativas.
+          Autorizo o uso dos dados fornecidos neste formulário pela organização do Pulso Clínico para comunicações relacionadas às próximas edições e iniciativas do projeto.
         </span>
       </label>
     </form>
@@ -415,21 +411,21 @@
       <div class="check">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="#17bf63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <h1>Solicitação recebida!</h1>
-      <p>Sua solicitação de participação foi registrada com sucesso. A comissão organizadora entrará em contato para confirmar sua participação no evento.</p>
+      <h1>Cadastro realizado!</h1>
+      <p>Seu interesse foi registrado com sucesso. Quando a próxima edição for definida, entraremos em contato com as informações do evento.</p>
       
       <!-- Novo botão adicionado aqui -->
-      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer nova inscrição</button>
+      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer novo cadastro</button>
     </div>
   </div>
 
-  <div class="footer-note">Pulso Clínico para Gestores · Natal/RN</div>
+  <div class="footer-note">Pulso Clínico · Próxima edição</div>
   </div>
 </div>
 
 <script>
   // ⚠️ Substitua pela URL do seu Google Apps Script (Web App) — veja README.md
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwD8gl3QDs2wcYMLBM3aKAJ7Y7RcnU_plotKXYxcbwUlO1U8TPLUS3qQ1uLoIfOoD-cFg/exec";
+  const SCRIPT_URL = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
 
   const screens = {
     welcome: document.getElementById('screen-welcome'),
@@ -472,6 +468,7 @@
       if(!valid) ok = false;
     });
 
+
     return ok;
   }
 
@@ -481,6 +478,7 @@
 
     btnSubmit.disabled = true;
     btnSubmit.textContent = 'Enviando...';
+
 
     const payload = {
       nome: form.nome.value.trim(),
@@ -492,10 +490,7 @@
       tema: form.tema.value.trim(),
       observacoes: form.observacoes.value.trim(),
       autorizacaoDados: form.autorizacaoDados.checked ? 'SIM' : 'NÃO',
-      evento: 'Pulso Clínico para Gestores',
-      dataEvento: '22/10/2026',
-      horarioEvento: '13h30 às 17h',
-      localEvento: 'A confirmar',
+      evento: 'Pulso Clínico - Próxima edição',
       paginaOrigem: window.location.href,
     };
 
@@ -515,7 +510,7 @@
     } catch (err) {
       console.error(err);
       btnSubmit.disabled = false;
-      btnSubmit.textContent = 'Enviar inscrição';
+      btnSubmit.textContent = 'Cadastrar interesse';
       alert('Não foi possível enviar agora. Verifique sua conexão e tente novamente.');
     }
   });
