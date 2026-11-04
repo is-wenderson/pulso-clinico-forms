@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Pulso Clínico — Próxima edição</title>
-<meta name="description" content="Cadastre seu interesse para participar da próxima edição do Pulso Clínico">
+<title>Pulso Clínico — Última edição de 2026</title>
+<meta name="description" content="Solicitação de participação para a última edição de 2026 do Pulso Clínico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -329,20 +329,27 @@
 
   <!-- TELA 1: BOAS-VINDAS -->
   <div class="screen active" id="screen-welcome">
-    <span class="eyebrow"><span class="dot"></span>Pulso Clínico</span>
-    <h1>Inscreva-se no próximo Pulso Clínico</h1>
-    <p class="lead">O <strong>Pulso Clínico</strong> é um espaço de conexão e troca de experiências para profissionais que vivem os desafios da gestão em saúde.</p>
+    <span class="eyebrow"><span class="dot"></span>Pulso Clínico · Última edição de 2026</span>
+    <h1>Construindo um 2027 estratégico</h1>
+    <p class="lead">O último <strong>Pulso Clínico de 2026</strong> será um encontro dedicado a planejamento, gestão e crescimento para empresários do setor de saúde.</p>
     <div class="exclusive">
-      Cadastre seu interesse para receber em primeira mão as informações da próxima edição e saber quando as novas vagas forem abertas.
+      <b>Evento gratuito e exclusivo, com apenas 30 vagas.</b><br><br>
+      Cada clínica poderá participar com até <b>2 representantes</b>: o sócio ou proprietário e, caso deseje, um gerente ou administrador da empresa. A participação do segundo representante será confirmada somente mediante a confirmação do sócio ou proprietário.
+      <br><br>
+      O preenchimento deste formulário representa uma <b>solicitação de participação</b> e não garante a vaga. As confirmações serão realizadas pela comissão organizadora, de acordo com a disponibilidade.
     </div>
-    <button class="btn" style="margin-top:26px" id="btn-start">Quero receber as próximas informações</button>
+    <p class="event-info">
+      <strong>26 de novembro de 2026 · 18h</strong><br>
+      <strong>Adega São Cristóvão · Natal/RN</strong>
+    </p>
+    <button class="btn" style="margin-top:26px" id="btn-start">Solicitar participação</button>
   </div>
 
   <!-- TELA 2: FORMULÁRIO -->
   <div class="screen" id="screen-form">
     <span class="eyebrow"><span class="dot"></span>Pulso Clínico</span>
-    <h1>Interesse na próxima edição</h1>
-    <p class="lead">Preencha seus dados para receber as informações do próximo Pulso Clínico.</p>
+    <h1>Solicite sua participação</h1>
+    <p class="lead">Preencha os dados abaixo para solicitar sua participação na última edição do Pulso Clínico de 2026.</p>
 
     <form id="pulso-form" novalidate>
 
@@ -393,7 +400,7 @@
         <textarea id="observacoes" name="observacoes" placeholder="Contribua com ideias e sugestões"></textarea>
       </div>
 
-      <button class="btn" type="submit" id="btn-submit">Cadastrar interesse</button>
+      <button class="btn" type="submit" id="btn-submit">Enviar solicitação</button>
       <button class="btn btn-ghost" type="button" id="btn-back">Voltar</button>
 
       <label class="consent-box" for="autorizacaoDados">
@@ -411,15 +418,15 @@
       <div class="check">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="#17bf63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <h1>Cadastro realizado!</h1>
-      <p>Seu interesse foi registrado com sucesso. Quando a próxima edição for definida, entraremos em contato com as informações do evento.</p>
+      <h1>Solicitação recebida!</h1>
+      <p>Sua solicitação foi registrada com sucesso. O envio deste formulário não garante a vaga. A comissão organizadora entrará em contato para informar a confirmação da participação.</p>
       
       <!-- Novo botão adicionado aqui -->
-      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer novo cadastro</button>
+      <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer nova solicitação</button>
     </div>
   </div>
 
-  <div class="footer-note">Pulso Clínico · Próxima edição</div>
+  <div class="footer-note">Pulso Clínico · Última edição de 2026</div>
   </div>
 </div>
 
@@ -490,7 +497,10 @@
       tema: form.tema.value.trim(),
       observacoes: form.observacoes.value.trim(),
       autorizacaoDados: form.autorizacaoDados.checked ? 'SIM' : 'NÃO',
-      evento: 'Pulso Clínico - Próxima edição',
+      evento: 'Pulso Clínico - Última edição de 2026',
+      dataEvento: '26/11/2026',
+      horarioEvento: '18h',
+      localEvento: 'Adega São Cristóvão - Natal/RN',
       paginaOrigem: window.location.href,
     };
 
@@ -510,7 +520,7 @@
     } catch (err) {
       console.error(err);
       btnSubmit.disabled = false;
-      btnSubmit.textContent = 'Cadastrar interesse';
+      btnSubmit.textContent = 'Enviar solicitação';
       alert('Não foi possível enviar agora. Verifique sua conexão e tente novamente.');
     }
   });
