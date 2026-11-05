@@ -310,6 +310,118 @@
     color:#edf7ff5c;
   }
 
+
+  .payment-card{
+    margin-top:22px;
+    padding:20px;
+    border-radius:20px;
+    background:linear-gradient(180deg, rgba(23,191,99,.10), rgba(255,255,255,.025));
+    border:1px solid rgba(23,191,99,.34);
+    text-align:left;
+  }
+  .payment-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:800;
+    margin-bottom:8px;
+    color:var(--text);
+  }
+  .payment-title .badge{
+    width:34px;height:34px;
+    border-radius:50%;
+    display:grid;place-items:center;
+    background:var(--accent-soft);
+    border:1px solid rgba(23,191,99,.45);
+    color:var(--accent);
+    font-size:17px;
+  }
+  .payment-desc{
+    margin:0 0 16px;
+    color:var(--text-dim);
+    font-size:14px;
+    line-height:1.55;
+  }
+  .pix-key-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    background:rgba(0,0,0,.16);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:13px 14px;
+  }
+  .pix-key-box .label{
+    display:block;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--text-dim);
+    margin-bottom:4px;
+  }
+  .pix-key-box strong{
+    display:block;
+    font-size:13px;
+    line-height:1.4;
+    word-break:break-all;
+    color:var(--text);
+  }
+  .action-stack{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:14px;
+  }
+  .action-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    min-height:50px;
+    border-radius:16px;
+    padding:14px 18px;
+    font-family:inherit;
+    font-size:14.5px;
+    font-weight:800;
+    text-decoration:none;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .action-btn:hover{transform:translateY(-1px);}
+  .action-btn:active{transform:translateY(0);}
+  .action-btn-copy{
+    background:var(--accent);
+    color:#0b1712;
+    border:1px solid var(--accent);
+    box-shadow:0 12px 28px -14px rgba(23,191,99,.9);
+  }
+  .action-btn-whatsapp{
+    background:transparent;
+    color:var(--text);
+    border:1px solid rgba(237,247,255,.28);
+  }
+  .action-btn-whatsapp:hover{border-color:var(--accent);}
+  .copy-feedback{
+    display:none;
+    margin-top:10px;
+    color:var(--accent);
+    font-size:12.5px;
+    font-weight:700;
+    text-align:center;
+  }
+  .payment-note{
+    margin-top:14px;
+    padding-top:13px;
+    border-top:1px solid var(--border);
+    color:var(--text-dim);
+    font-size:12.8px;
+    line-height:1.55;
+    text-align:center;
+  }
+
   @media (max-width:480px){
     .card{padding:32px 22px; border-radius:22px;}
     h1{font-size:25px;}
@@ -333,10 +445,10 @@
     <h1>Construindo um 2027 estratégico</h1>
     <p class="lead">O último <strong>Pulso Clínico de 2026</strong> será um encontro dedicado a planejamento, gestão e crescimento para empresários do setor de saúde.</p>
     <div class="exclusive">
-      <b>Evento gratuito e exclusivo, com apenas 30 vagas.</b><br><br>
-      Cada clínica poderá participar com até <b>2 representantes</b>: o sócio ou proprietário e, caso deseje, um gerente ou administrador da empresa. A participação do segundo representante será confirmada somente mediante a confirmação do sócio ou proprietário.
+      <b>Encontro exclusivo para 30 pessoas.</b><br><br>
+      Para ampliar a participação de diferentes clínicas, cada clínica terá <b>1 convite gratuito</b>, com prioridade para sócio ou proprietário. Caso outro sócio, gestor ou administrador queira acompanhar, haverá um investimento adicional de <b>R$ 180 por pessoa</b>.
       <br><br>
-      O preenchimento deste formulário representa uma <b>solicitação de participação</b> e não garante a vaga. As confirmações serão realizadas pela comissão organizadora, de acordo com a disponibilidade.
+      O envio do formulário é uma <b>solicitação de participação</b>. As vagas serão confirmadas pela comissão organizadora conforme disponibilidade.
     </div>
     <p class="event-info">
       <strong>26 de novembro de 2026 · 18h</strong><br>
@@ -360,9 +472,9 @@
       </div>
 
       <div class="field" data-field="empresa">
-        <label for="empresa">Empresa/Clínica<span class="req">*</span></label>
-        <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da Empresa/Clínica" required>
-        <div class="error">Informe o nome da empresa ou clínica.</div>
+        <label for="empresa">Clínica / Instituição de Saúde<span class="req">*</span></label>
+        <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da clínica ou instituição de saúde" required>
+        <div class="error">Informe o nome da clínica ou instituição de saúde.</div>
       </div>
 
       <div class="field" data-field="cargo">
@@ -382,6 +494,15 @@
         <input type="text" id="instagram" name="instagram" placeholder="@seuinstagram">
       </div>
 
+      <div class="field" data-field="acompanhante">
+        <label for="acompanhante">Está acompanhando alguém da sua clínica?<span class="req">*</span></label>
+        <select id="acompanhante" name="acompanhante" required>
+          <option value="">Selecione</option>
+          <option value="NÃO">Não</option>
+          <option value="SIM">Sim</option>
+        </select>
+        <div class="error">Informe se haverá acompanhante.</div>
+      </div>
 
       <div class="field" data-field="comoSoube">
         <label for="comoSoube">Como soube do Pulso Clínico?</label>
@@ -423,9 +544,37 @@
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="#17bf63" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <h1>Solicitação recebida!</h1>
-      <p>Sua solicitação foi registrada com sucesso. O envio deste formulário não garante a vaga. A comissão organizadora entrará em contato para informar a confirmação da participação.</p>
+      <p>Sua solicitação foi registrada. A inscrição não garante a vaga: a comissão organizadora entrará em contato para confirmar a participação.</p>
+
+      <div class="conditional" id="pix-box-final">
+        <div class="payment-card">
+          <div class="payment-title">
+            <span class="badge">$</span>
+            Pagamento do acompanhante
+          </div>
+          <p class="payment-desc">O investimento adicional é de <strong>R$ 180 por pessoa</strong>. Faça o PIX abaixo e envie o comprovante pelo WhatsApp.</p>
+
+          <div class="pix-key-box">
+            <div>
+              <span class="label">Chave PIX aleatória</span>
+              <strong id="pix-key">44342353-3183-46aa-8e30-047f97d76092</strong>
+            </div>
+          </div>
+
+          <div class="action-stack">
+            <button class="action-btn action-btn-copy" type="button" id="btn-copy-pix">
+              <span aria-hidden="true">⧉</span> Copiar chave PIX
+            </button>
+            <a class="action-btn action-btn-whatsapp" href="https://wa.me/5584998980174" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">◉</span> Enviar comprovante no WhatsApp
+            </a>
+          </div>
+
+          <div id="copy-feedback" class="copy-feedback">Chave PIX copiada!</div>
+          <div class="payment-note">WhatsApp: <strong>(84) 99898-0174</strong><br>A vaga do acompanhante será confirmada após a validação do pagamento.</div>
+        </div>
+      </div>
       
-      <!-- Novo botão adicionado aqui -->
       <button class="btn btn-ghost" type="button" id="btn-new" style="margin-top: 20px;">Fazer nova solicitação</button>
     </div>
   </div>
@@ -436,7 +585,7 @@
 
 <script>
   // ⚠️ Substitua pela URL do seu Google Apps Script (Web App) — veja README.md
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxHErjrtFFPp0dOYEyP6-MlWWJK59sgkGktb2j-M_B0rnp6hWg4SFk3IrvwUnKFaiawFA/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwD8gl3QDs2wcYMLBM3aKAJ7Y7RcnU_plotKXYxcbwUlO1U8TPLUS3qQ1uLoIfOoD-cFg/exec";
 
   const screens = {
     welcome: document.getElementById('screen-welcome'),
@@ -463,6 +612,30 @@
 
   const form = document.getElementById('pulso-form');
   const btnSubmit = document.getElementById('btn-submit');
+  const acompanhante = document.getElementById('acompanhante');
+  const pixBoxFinal = document.getElementById('pix-box-final');
+  const btnCopyPix = document.getElementById('btn-copy-pix');
+  const copyFeedback = document.getElementById('copy-feedback');
+
+  btnCopyPix.addEventListener('click', async () => {
+    const pix = document.getElementById('pix-key').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(pix);
+    } catch (err) {
+      const area = document.createElement('textarea');
+      area.value = pix;
+      document.body.appendChild(area);
+      area.select();
+      document.execCommand('copy');
+      area.remove();
+    }
+    copyFeedback.style.display = 'block';
+    btnCopyPix.textContent = 'Chave PIX copiada';
+    setTimeout(() => {
+      copyFeedback.style.display = 'none';
+      btnCopyPix.textContent = 'Copiar chave PIX';
+    }, 2500);
+  });
 
   function setError(name, on){
     const field = form.querySelector(`[data-field="${name}"]`);
@@ -471,10 +644,10 @@
 
   function validate(){
     let ok = true;
-    const required = ['nome','empresa','cargo','whatsapp'];
+    const required = ['nome','empresa','cargo','whatsapp','acompanhante'];
     required.forEach(name => {
       const el = form.elements[name];
-      const valid = el.value.trim().length > (name === 'whatsapp' ? 13 : 1);
+      const valid = name === 'whatsapp' ? el.value.trim().length > 13 : el.value.trim().length > 0;
       setError(name, !valid);
       if(!valid) ok = false;
     });
@@ -497,6 +670,10 @@
       cargo: form.cargo.value.trim(),
       whatsapp: form.whatsapp.value.trim(),
       instagram: form.instagram.value.trim(),
+      acompanhante: form.acompanhante.value,
+      convitePrincipal: 'SIM - 1 convite gratuito por clínica',
+      valorAdicional: form.acompanhante.value === 'SIM' ? 'R$ 180,00 por pessoa' : 'R$ 0,00',
+      statusConfirmacao: 'AGUARDANDO CONFIRMAÇÃO DA ORGANIZAÇÃO',
       comoSoube: form.comoSoube.value.trim(),
       dores: form.dores.value.trim(),
       tema: form.tema.value.trim(),
@@ -520,6 +697,8 @@
           body: JSON.stringify(payload)
         });
       }
+      const tinhaAcompanhante = form.acompanhante.value === 'SIM';
+      pixBoxFinal.classList.toggle('show', tinhaAcompanhante);
       showScreen('thanks');
       form.reset();
     } catch (err) {
